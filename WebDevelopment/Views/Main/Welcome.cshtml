@@ -1,0 +1,20 @@
+﻿@model  WebDevelopment.Models.Movie
+
+@{
+    ViewData["Title"] = "WelcomeIndex";
+}
+
+<h2>Welcome111</h2>
+@using (Html.BeginForm("Calculate","Main"))
+{
+    @Html.Label("Amount") @Html.EditorFor(s => s.Title)
+        <input type="submit" value="Generate report" />
+}
+
+
+@using (Html.BeginForm("UpdateModel", "Main"))
+{
+    @Html.Label("Amount") @Html.EditorFor(s => s.Price)
+    <input type="submit" value="update Model" />
+}
+<p>Hello from our View Template!</p>
